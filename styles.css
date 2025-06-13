@@ -1,0 +1,242 @@
+body{
+    background-color: #128f7d;
+    color: #ec9877;
+    margin: 0;
+    padding: 0;
+    font-family: "Abril Fatface", serif; 
+}
+
+nav{
+    display: flex;
+    justify-content: end;
+    position: fixed;
+    top: 0;
+    float: left;
+    background-color: #128f7d;
+    width: 100%;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+}
+
+nav li{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: 10px;
+    margin-right: 30px;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: #ec9877;
+    background-color: #128f7d;
+    color:#ec9877;
+    font-size: 30px;
+    
+}
+
+nav li:hover{
+    background-color: #ec9877;
+    color: #128f7d
+}
+
+#title_section{
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-bottom: 0;
+}
+
+#title_section h1{
+    font-size: 170px;
+    margin-bottom: 0;
+    font-weight: 900;
+}
+
+#image_banner_section img{
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+}
+
+#intro p{
+    font-size: 60px;
+    padding: 50px 60px 100px 50px;
+}
+
+#menu_section{
+    text-align: center;
+    background-color: #ec9877;
+    color: #128f7d;
+    padding-bottom: 50px;
+}
+
+.menu_title{
+    font-size: 80px;
+}
+
+.menu ul{
+    list-style-type: none;
+    text-align: center;
+}
+
+.menu h1{
+    font-size: 60px;
+}
+
+.menu h2{
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.menu p{
+    font-size: 20px;
+    font-weight: 100;
+}
+
+hr{
+    width: 200px;
+    color: #049fa8;
+}
+
+#pictures{
+    display:flex;
+}
+
+.gallery_picture1{
+    margin: 0;
+    padding: 0;
+    width:33.33%;
+    height: 250px;
+    background-image: url(katsuchips.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.gallery_picture2{
+    margin: 0;
+    padding: 0;
+    width:33.33%;
+    height: 250px;
+    background-image: url(meatballs.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.gallery_picture3{
+    margin: 0;
+    padding: 0;
+    width:33.33%;
+    height: 250px;
+    background-image: url(boa.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+footer{
+    background-color: #128f7d;
+    color:#ec9877;
+}
+
+footer{
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer li{
+    list-style: none;
+    margin: 20px;
+}
+
+@media only screen  and (max-width: 1200px) and (min-width: 480px){
+    #title_section h1{
+        padding-top: 30px;
+        font-size: 80px;
+    }
+
+    #image_banner_section img{
+        height: 300px;
+    }
+
+    nav li{
+        font-size: 20px;
+    }
+
+    #intro p{
+        font-size: 40px;
+        padding: 10px 30px 20px 30px;
+    }
+
+    .menu_title{
+        font-size: 50px;
+    }
+
+    #menu_section{
+        padding-right: 50px;
+    }
+
+    .gallery_picture1{
+        height: 180px;
+    }
+
+    .gallery_picture2{
+        height: 180px;
+    }
+
+    .gallery_picture3{
+        height: 180px;
+}
+}
+
+
+@media only screen and (max-width: 480px){
+    #title_section h1{
+        padding-top: 30px;
+        font-size: 60px;
+        margin-left: 0;
+    }
+
+    #image_banner_section img{
+        height: 300px;
+    }
+    nav{
+        padding-left: 20px;
+    }
+    nav li{
+        font-size: 14px;
+        padding-right: 7px;
+        padding-left: 5px;
+    }
+
+    #intro p{
+        font-size: 30px;
+        padding: 10px 30px 20px 30px;
+    }
+
+    .menu_title{
+        font-size: 50px;
+    }
+
+    #menu_section{
+        padding-right: 50px;
+    }
+
+    .gallery_picture1{
+        height: 125px;
+    }
+
+    .gallery_picture2{
+        height: 125px;
+    }
+
+    .gallery_picture3{
+        height: 125px;
+    }
+    footer p{
+        display: none;
+    }
+}
